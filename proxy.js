@@ -1,7 +1,7 @@
 import { connect } from "amqplib";
 
-const QUEUE_NAME = "billing_queue";
-const RABBITMQ_URL = "amqp://127.0.0.1";
+const QUEUE_NAME = process.env.RABBITMQ_QUEUE;
+const RABBITMQ_URL = process.env.RABBITMQ_URL;
 
 export async function publishToRabbitMQ(message) {
   try {
