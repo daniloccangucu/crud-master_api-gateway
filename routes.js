@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { publishToRabbitMQ } from "./proxy.js";
+import { publishToRabbitMQ } from "./rabbitmq.js";
 
 const router = Router();
 
